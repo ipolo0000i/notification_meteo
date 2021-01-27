@@ -1,0 +1,232 @@
+f"""<html>
+	<tbody><tr><td>
+		  <div>
+		  <div style="background-color:#ffffff">
+			<div class="m_951682899310027360layout m_951682899310027360one-col" style="Margin:0 auto;max-width:600px;min-width:320px;width:320px;width:calc(28000% - 167400px);word-wrap:break-word;word-break:break-word">
+			  <div class="m_951682899310027360layout__inner" style="border-collapse:collapse;display:table;width:100%">
+			  
+				<div class="m_951682899310027360column" style="max-width:600px;min-width:320px;width:320px;width:calc(28000% - 167400px);text-align:left;color:#363f48;font-size:16px;line-height:24px;font-family:Karla,Calibri,Geneva,sans-serif">
+				
+			<div style="font-size:12px;font-style:normal;font-weight:normal;line-height:19px" align="center">
+			  <img style="border:0;display:block;height:auto;width:100%;max-width:600px" alt="" width="600" src="https://chezpolo.eu/mail_meteo/banner.png" class="CToWUd a6T" tabindex="0"><div class="a6S" dir="ltr" style="opacity: 0.01; left: 552px; top: 170px;"><div id=":uh" class="T-I J-J5-Ji aQv T-I-ax7 L3 a5q" role="button" tabindex="0" aria-label="Télécharger la pièce jointe " data-tooltip-class="a1V" data-tooltip="Télécharger"><div class="aSK J-J5-Ji aYr"></div></div></div>
+			</div>
+		  
+				  <div style="Margin-left:20px;Margin-right:20px;Margin-top:20px">
+		  <div>
+			<h1 class="m_951682899310027360size-32" style="Margin-top:0;Margin-bottom:0;font-style:normal;font-weight:normal;color:#363f48;font-size:28px;line-height:36px;font-family:Montserrat,DejaVu Sans,Verdana,sans-serif" lang="x-size-32"><strong>Bilan météo de la journée du :</strong></h1><p class="m_951682899310027360size-26" style="Margin-top:20px;Margin-bottom:0;font-size:22px;line-height:31px;text-align:center" lang="x-size-26"><strong>{date.today().strftime('%A %d %B')}</strong></p><p style="Margin-top:20px;Margin-bottom:0">&nbsp;</p>
+		  </div>
+		</div>
+				
+				</div>
+			  
+			  </div>
+			</div>
+		  </div>
+	  
+		  <div style="background-color:#004e64">
+			<div class="m_951682899310027360layout" style="Margin:0 auto;max-width:600px;min-width:320px;width:320px;width:calc(28000% - 167400px);word-wrap:break-word;word-break:break-word">
+			  <div class="m_951682899310027360layout__inner" style="border-collapse:collapse;display:table;width:100%">
+			  
+				<div class="m_951682899310027360column m_951682899310027360narrow" style="text-align:left;color:#363f48;font-size:16px;line-height:24px;font-family:Karla,Calibri,Geneva,sans-serif;Float:left;max-width:320px;min-width:200px;width:320px;width:calc(72200px - 12000%)">
+				
+				  <div style="Margin-left:20px;Margin-right:20px">
+		  <div style="line-height:40px;font-size:1px">&nbsp;</div>
+		</div>
+				
+				  <div style="Margin-left:20px;Margin-right:20px">
+			<div style="font-size:12px;font-style:normal;font-weight:normal;line-height:19px" align="left">
+			  <img style="border:0;display:block;height:auto;width:100%;max-width:400px" alt="" width="160" src="https://chezpolo.eu/mail_meteo/station.png" class="CToWUd a6T" tabindex="0"><div class="a6S" dir="ltr" style="opacity: 0.01; left: 132px; top: 528px;"><div id=":ui" class="T-I J-J5-Ji aQv T-I-ax7 L3 a5q" title="Télécharger" role="button" tabindex="0" aria-label="Télécharger la pièce jointe " data-tooltip-class="a1V"><div class="aSK J-J5-Ji aYr"></div></div></div>
+			</div>
+		  </div>
+				
+				</div>
+			  
+				<div class="m_951682899310027360column m_951682899310027360wide" style="text-align:left;color:#363f48;font-size:16px;line-height:24px;font-family:Karla,Calibri,Geneva,sans-serif;Float:left;max-width:400px;min-width:320px;width:320px;width:calc(8000% - 47600px)">
+				
+				  <div style="Margin-left:20px;Margin-right:20px">
+		  <div style="line-height:40px;font-size:1px">&nbsp;</div>
+		</div>
+				
+				  <div style="Margin-left:20px;Margin-right:20px">
+		  <div>
+			<h2 style="Margin-top:0;Margin-bottom:0;font-style:normal;font-weight:normal;color:#363f48;font-size:20px;line-height:28px;font-family:Montserrat,DejaVu Sans,Verdana,sans-serif"><span style="color:#ffffff"><strong>Détail de la journée</strong></span></h2><p style="Margin-top:16px;Margin-bottom:20px">
+			<span style="color:#ffffff">• Température maxi&nbsp;: <strong>{bilan.t_max}</strong>°C à {bilan.ht_max}<br>
+	• Température mini&nbsp;: <strong>{bilan.t_min}</strong>°C à {bilan.ht_min}<br>
+	• Hygrométrie maxi/mini : <strong>{bilan.hygro_max}</strong>%/<strong>{bilan.hygro_min}</strong>%<br>
+	• Vitesse vent maxi : <strong>{bilan.v_max}</strong> km/h à {bilan.hv_max}<br>
+	• Direction du vent : <strong>{bilan.v_dir}</strong><br>
+	• Cumul pluviométrie : <strong>{bilan.pluie_c}&nbsp;</strong>mm</span><br>
+	&nbsp;</p>
+		  </div>
+		</div>
+				
+				  <div style="Margin-left:20px;Margin-right:20px">
+		  <div style="line-height:40px;font-size:1px">&nbsp;</div>
+		</div>
+				
+				</div>
+			  
+			  </div>
+			</div>
+		  </div>
+	  
+		  <div style="background-color:#5dd9c1">
+			<div class="m_951682899310027360layout m_951682899310027360two-col" style="Margin:0 auto;max-width:600px;min-width:320px;width:320px;width:calc(28000% - 167400px);word-wrap:break-word;word-break:break-word">
+			  <div class="m_951682899310027360layout__inner" style="border-collapse:collapse;display:table;width:100%">
+			  
+	
+				
+			<div style="font-size:12px;font-style:normal;font-weight:normal;line-height:19px" align="center">
+			  <img class="m_951682899310027360gnd-corner-image m_951682899310027360gnd-corner-image-center m_951682899310027360gnd-corner-image-top m_951682899310027360gnd-corner-image-bottom CToWUd a6T" style="border:0;display:block;height:auto;width:100%" alt="" width="300" src="{cid}" tabindex="0"><div class="a6S" dir="ltr" style="opacity: 0.01; left: 252px; top: 920px;"><div id=":uj" class="T-I J-J5-Ji aQv T-I-ax7 L3 a5q" title="Télécharger" role="button" tabindex="0" aria-label="Télécharger la pièce jointe " data-tooltip-class="a1V"><div class="aSK J-J5-Ji aYr"></div></div></div>
+			</div>
+		  
+
+			  
+			  
+			  </div>
+			</div>
+		  </div>
+	  
+		  <div style="background-color:#91f9e5">
+			<div class="m_951682899310027360layout" style="Margin:0 auto;max-width:600px;min-width:320px;width:320px;width:calc(28000% - 167400px);word-wrap:break-word;word-break:break-word">
+			  <div class="m_951682899310027360layout__inner" style="border-collapse:collapse;display:table;width:100%">
+			  
+				<div class="m_951682899310027360column m_951682899310027360narrow" style="text-align:left;color:#363f48;font-size:16px;line-height:24px;font-family:Karla,Calibri,Geneva,sans-serif;Float:left;max-width:320px;min-width:200px;width:320px;width:calc(72200px - 12000%)">
+				
+				  <div style="Margin-left:20px;Margin-right:20px">
+		  <div style="line-height:40px;font-size:1px">&nbsp;</div>
+		</div>
+				
+				  <div style="Margin-left:20px;Margin-right:20px">
+			<div style="font-size:12px;font-style:normal;font-weight:normal;line-height:19px" align="center">
+			  <img style="border:0;display:block;height:auto;width:100%;max-width:400px" alt="" width="160" src="https://chezpolo.eu/mail_meteo/meteociel.png" class="CToWUd a6T" tabindex="0"><div class="a6S" dir="ltr" style="opacity: 0.01; left: 132px; top: 1120px;"><div id=":ul" class="T-I J-J5-Ji aQv T-I-ax7 L3 a5q" title="Télécharger" role="button" tabindex="0" aria-label="Télécharger la pièce jointe " data-tooltip-class="a1V"><div class="aSK J-J5-Ji aYr"></div></div></div>
+			</div>
+		  </div>
+				
+				</div>
+			  
+				<div class="m_951682899310027360column m_951682899310027360wide" style="text-align:left;color:#363f48;font-size:16px;line-height:24px;font-family:Karla,Calibri,Geneva,sans-serif;Float:left;max-width:400px;min-width:320px;width:320px;width:calc(8000% - 47600px)">
+				
+				  <div style="Margin-left:20px;Margin-right:20px">
+		  <div style="line-height:40px;font-size:1px">&nbsp;</div>
+		</div>
+				
+				  <div style="Margin-left:20px;Margin-right:20px">
+		  <div>
+			<h2 style="Margin-top:0;Margin-bottom:0;font-style:normal;font-weight:normal;color:#363f48;font-size:20px;line-height:28px;font-family:Montserrat,DejaVu Sans,Verdana,sans-serif"><strong>Prévision pour demain</strong></h2><p style="Margin-top:16px;Margin-bottom:20px">
+	<span style="color:#363f48">
+	• Ambiance générale&nbsp;: <strong>{previ.ambiance}</strong><br>
+	• Température maxi&nbsp;: <strong>{previ.t_max}</strong>°C à {previ.ht_max}<br>
+	• Température mini : <strong>{previ.t_min}</strong>°C à {previ.ht_min}<br>
+	• Vitesse vent maxi : <strong>{previ.v_max}</strong> km/h à {previ.hv_max}<br>
+	• Direction du vent&nbsp;: <strong>{previ.v_dir}</strong><br>
+	• Cumul pluviométrie : <strong>{previ.pluie_c}&nbsp;</strong>mm</span></p>
+		  </div>
+		</div>
+				
+				  <div style="Margin-left:20px;Margin-right:20px">
+		  <div style="line-height:40px;font-size:1px">&nbsp;</div>
+		</div>
+				
+				</div>
+			  
+			  </div>
+			</div>
+		  </div>
+	  
+		  <div class="m_951682899310027360layout m_951682899310027360one-col m_951682899310027360fixed-width" style="Margin:0 auto;max-width:600px;min-width:320px;width:320px;width:calc(28000% - 167400px);word-wrap:break-word;word-break:break-word">
+			<div class="m_951682899310027360layout__inner" style="border-collapse:collapse;display:table;width:100%;background-color:#ffffff">
+			
+			  <div class="m_951682899310027360column" style="text-align:left;color:#363f48;font-size:16px;line-height:24px;font-family:Karla,Calibri,Geneva,sans-serif;max-width:600px;min-width:320px;width:320px;width:calc(28000% - 167400px)">
+			
+				<div style="Margin-left:20px;Margin-right:20px">
+		  <div style="line-height:20px;font-size:1px">&nbsp;</div>
+		</div>
+			
+			  </div>
+			
+			</div>
+		  </div>
+	  
+		  <div style="line-height:20px;font-size:20px">&nbsp;</div>
+	  
+		  <div class="m_951682899310027360layout m_951682899310027360two-col m_951682899310027360has-gutter" style="Margin:0 auto;max-width:600px;min-width:320px;width:320px;width:calc(28000% - 167400px);word-wrap:break-word;word-break:break-word">
+			<div class="m_951682899310027360layout__inner" style="border-collapse:collapse;display:table;width:100%">
+			
+			  <div class="m_951682899310027360column" style="Float:left;max-width:320px;min-width:290px;width:320px;width:calc(18290px - 3000%)">
+				<table class="m_951682899310027360column__background" style="border-collapse:collapse;table-layout:fixed;background-color:#ffffff" cellpadding="0" cellspacing="0" width="100%" role="presentation">
+				  <tbody><tr>
+					<td style="text-align:left;color:#363f48;font-size:16px;line-height:24px;font-family:Karla,Calibri,Geneva,sans-serif">
+					
+					  <div style="Margin-left:20px;Margin-right:20px">
+		  <div class="m_951682899310027360btn m_951682899310027360btn--flat m_951682899310027360fullwidth m_951682899310027360btn--large" style="text-align:center">
+			<u></u><a style="border-radius:4px;display:block;font-size:14px;font-weight:bold;line-height:24px;padding:12px 24px;text-align:center;text-decoration:none!important;color:#ffffff!important;background-color:#363f48;font-family:Karla,Calibri,Geneva,sans-serif" href="https://www.meteociel.fr/previsions-wrf-1h/25600/grigny.htm" target="_blank" >voir les prévision</a><u></u>
+		  </div>
+		</div>
+					
+					</td>
+				  </tr>
+				</tbody></table>
+			  </div>
+			<div class="m_951682899310027360gutter" style="Float:left;width:20px">&nbsp;</div>
+			  <div class="m_951682899310027360column" style="Float:left;max-width:320px;min-width:290px;width:320px;width:calc(18290px - 3000%)">
+				<table class="m_951682899310027360column__background" style="border-collapse:collapse;table-layout:fixed;background-color:#ffffff" cellpadding="0" cellspacing="0" width="100%" role="presentation">
+				  <tbody><tr>
+					<td style="text-align:left;color:#363f48;font-size:16px;line-height:24px;font-family:Karla,Calibri,Geneva,sans-serif">
+					
+					  <div style="Margin-left:20px;Margin-right:20px">
+		  <div class="m_951682899310027360btn m_951682899310027360btn--flat m_951682899310027360fullwidth m_951682899310027360btn--large" style="text-align:center">
+			<u></u><a style="border-radius:4px;display:block;font-size:14px;font-weight:bold;line-height:24px;padding:12px 24px;text-align:center;text-decoration:none!important;color:#ffffff!important;background-color:#363f48;font-family:Karla,Calibri,Geneva,sans-serif" href="http://polo0000.raspiweather.com/" target="_blank" >voir les données météo</a><u></u>
+		  </div>
+		</div>
+					
+					</td>
+				  </tr>
+				</tbody></table>
+			  </div>
+			
+			</div>
+		  </div>
+	  
+		  <div style="line-height:20px;font-size:20px">&nbsp;</div>
+	  
+		  
+		  <div role="contentinfo">
+			<div class="m_951682899310027360layout m_951682899310027360email-footer" style="Margin:0 auto;max-width:600px;min-width:320px;width:320px;width:calc(28000% - 167400px);word-wrap:break-word;word-break:break-word">
+			  <div class="m_951682899310027360layout__inner" style="border-collapse:collapse;display:table;width:100%">
+			  
+				<div class="m_951682899310027360column m_951682899310027360wide" style="text-align:left;font-size:12px;line-height:19px;color:#363f48;font-family:Karla,Calibri,Geneva,sans-serif;Float:left;max-width:400px;min-width:320px;width:320px;width:calc(8000% - 47600px)">
+				  <div style="Margin-left:20px;Margin-right:20px;Margin-top:10px;Margin-bottom:10px">
+					
+					<div style="font-size:12px;line-height:19px">
+					  
+					</div>
+					<div style="font-size:12px;line-height:19px;Margin-top:18px">
+					  
+					</div>
+					
+				  </div>
+				</div>
+			  
+				<div class="m_951682899310027360column m_951682899310027360narrow" style="text-align:left;font-size:12px;line-height:19px;color:#363f48;font-family:Karla,Calibri,Geneva,sans-serif;Float:left;max-width:320px;min-width:200px;width:320px;width:calc(72200px - 12000%)">
+				  <div style="Margin-left:20px;Margin-right:20px;Margin-top:10px;Margin-bottom:10px">
+					
+				  </div>
+				</div>
+			  
+			  </div>
+			</div>
+			<div class="m_951682899310027360layout m_951682899310027360one-col m_951682899310027360email-footer" style="Margin:0 auto;max-width:600px;min-width:320px;width:320px;width:calc(28000% - 167400px);word-wrap:break-word;word-break:break-word">
+			  <div class="m_951682899310027360layout__inner" style="border-collapse:collapse;display:table;width:100%">
+			  
+				<div class="m_951682899310027360column" style="text-align:left;font-size:12px;line-height:19px;color:#363f48;font-family:Karla,Calibri,Geneva,sans-serif;max-width:600px;min-width:320px;width:320px;width:calc(28000% - 167400px)">
+				  <div style="Margin-left:20px;Margin-right:20px;Margin-top:10px;Margin-bottom:10px">
+				  </div>
+				</div>
+			  
+			  </div>
+			</div>
+		  </div>
+		  <div style="line-height:40px;font-size:40px">&nbsp;</div>
+		</div></td></tr></tbody>
+</html>"""
