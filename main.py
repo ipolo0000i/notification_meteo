@@ -1,15 +1,16 @@
 import bilan
 import meteociel
 import mail
-#configuration
-e_mail = 'email@gmail.com'
-lien_meteociel = 'https://www.meteociel.fr/previsions/25600/grigny.htm'
+import signal
+import config
+
 
 
 #excecution
-meteo = meteociel.meteociel(lien_meteociel)
+prev = meteociel.meteociel(config.lien_meteociel)
 le_bilan = bilan.bilan()
 le_bilan.graph()
-email = mail.mail(le_bilan, meteo, e_mail)
+#email = mail.mail(le_bilan, meteo, e_mail)
+signal.envoyer(le_bilan, prev, config.station)
 print('ok')
 
